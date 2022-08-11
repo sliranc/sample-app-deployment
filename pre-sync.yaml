@@ -1,7 +1,7 @@
 apiVersion: batch/v1
 kind: Job
 metadata:
-  name: brfore
+  name: before
   annotations:
     argocd.argoproj.io/hook: PreSync
 spec:
@@ -9,7 +9,7 @@ spec:
     spec:
       containers:
       - name: sleep
-        image: aphine:latest
+        image: alphine:latest
         command: ["echo" , "pre-sync"]
       restartPolicy: Never
  
