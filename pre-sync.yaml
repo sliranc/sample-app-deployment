@@ -9,7 +9,7 @@ spec:
     spec:
       containers:
       - name: sleep
-        image: alphine:latest
+        image: alpine:latest
         command: ["echo" , "pre-sync"]
       restartPolicy: Never
  
